@@ -1,0 +1,132 @@
+/* Css slick */
+
+.slick-dots {
+    position: absolute;
+    right: 36px;
+    bottom: 10px;
+    width: auto;
+    display: flex;
+}
+
+.slick-dots li button:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+
+/* xử lý dots */
+
+.slick-dots li button {
+    border: 0;
+    background: transparent;
+    color: transparent;
+    width: 1.4rem;
+    padding: 0;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.slick-slide {
+    padding: 0 8px;
+}
+
+
+/* Slick preview */
+
+.slick-next,
+.slick-prev {
+    background: #fff;
+    border: none;
+}
+
+.slick-next,
+.slick-prev {
+    position: absolute;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 7px -4px #000;
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: -15px;
+}
+
+.slick-next {
+    right: -15px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.slick-next:before {
+    content: '';
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.slick-prev:before {
+    content: '';
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.slick-next.slick-disabled,
+.slick-prev.slick-disabled {
+    opacity: .5;
+}
+
+
+/* Responsive mobile */
+
+@media (max-width: 739px) {
+    .slick-dots {
+        right: 18px;
+        bottom: 2px;
+    }
+    .slick-dots li button:before {
+        width: 6px;
+        height: 6px;
+    }
+    .slick-next,
+    .slick-prev {
+        width: 48px;
+        height: 48px;
+        top: 45%;
+    }
+    .slick-prev {
+        left: -4px;
+    }
+    .slick-next {
+        right: -4px;
+    }
+}

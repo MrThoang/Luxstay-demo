@@ -1,0 +1,185 @@
+/* Mobile & Tablet */
+
+@media (max-width: 1023px) {
+    .mt-mobile--16 {
+        margin-top: 16px;
+    }
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header {
+        position: fixed;
+    }
+    .container {
+        top: 100px
+    }
+    .header__navbar-mobile-bar {
+        display: block;
+    }
+    .top-host {
+        font-weight: 700;
+    }
+    .top-host::before {
+        left: 42px;
+    }
+    .menu__currency {
+        justify-content: space-between;
+        padding: 12px;
+    }
+    .header__navbar {
+        height: 60px;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header__search-box {
+        margin: 0;
+    }
+    .tourist__select {
+        height: 250px;
+    }
+    /* .post__header {
+        height: 250px;
+    } */
+    .qr-code {
+        display: none;
+    }
+    .widget__qr-code {
+        display: none;
+    }
+    .widget-mgl--88,
+    .mg-left-20 {
+        margin: 0;
+    }
+    /* Currency box mobiele */
+    .currency-mobile-box {
+        border: 1px solid #d6d6d6;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+        z-index: 1;
+        width: 87%;
+        padding: 0 16px;
+        border-radius: 3px;
+        transform: translateY(30%);
+        visibility: hidden;
+        opacity: 0;
+        transition: linear 0.3s, opacity 0.3s;
+    }
+    .currency-mobile-input:checked~.overlay-currency {
+        display: block;
+    }
+    .currency-mobile-input:checked~.currency-mobile-box {
+        display: block;
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+        /*  Thuộc tính ẩn hiện đối tượng */
+    }
+    .currency-mobile-box .row {
+        padding: 8px 0;
+        background: #fff;
+        border-radius: 3px;
+    }
+    .currency-mobile-box,
+    .currency-mobile-box::before {
+        position: absolute;
+        background: #fff;
+    }
+    .currency-mobile-box::before {
+        content: "";
+        top: -8px;
+        z-index: -1;
+        right: 42px;
+        width: 16px;
+        height: 16px;
+        border-top-left-radius: 3px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 1px rgb(6 44 82 / 10%), 0 2px 16px rgb(33 43 54 / 8%);
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .row--child {
+        justify-content: center;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .flex--center {
+        justify-content: center;
+    }
+    .luxstay-wrapper {
+        padding: 0 16px;
+    }
+    .header {
+        left: 0;
+        padding: 0 16px;
+    }
+    .container {
+        position: relative;
+        top: 80px;
+    }
+    .header__navbar-mobile-bar {
+        display: block;
+        position: relative;
+    }
+    .header__search-guests,
+    .header__search-date {
+        display: none;
+    }
+    .header__search-box {
+        height: 40px;
+    }
+    .search-content {
+        padding: 0px 6px;
+    }
+    .tourist-title {
+        font-size: 2rem;
+    }
+    .title__list-click {
+        display: none;
+    }
+    .title__list-mobile-click {
+        display: block;
+        font-size: 1.6rem;
+        color: #f65e39;
+        text-decoration: none;
+        margin-top: 10px;
+        position: relative;
+        top: 10px;
+    }
+    .post__header {
+        height: 132px;
+    }
+    .post__title {
+        font-size: 1.6rem;
+    }
+    .app-link {
+        text-align: center;
+    }
+    /* widget*/
+    .widget__title {
+        text-align: center;
+    }
+    .about-item {
+        justify-content: center;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+    .mgl-call-mobile-10 {
+        margin-left: 10px;
+    }
+}
